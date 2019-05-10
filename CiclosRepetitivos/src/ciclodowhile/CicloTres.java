@@ -26,13 +26,13 @@ public class CicloTres {
         int sumaEdades = 0;
         double promedioEdades = 0;
         boolean bandera = true;
-        int contador = 0;
+        int cont = 0;
         String valorUsuario = "";
         
         cadena = String.format("%s%s\n", cadena, 
                 "Listado de personas ingresadas");
         do{ 
-            contador = contador + 1;
+            cont = cont + 1;
             
             System.out.println("Ingrese sus nombres: ");
             nombres = entrada.nextLine();
@@ -57,7 +57,7 @@ public class CicloTres {
             }
             
         }while (bandera == true) ;
-        promedioEdades = (double)sumaEdades/contador;
+        promedioEdades = (double)sumaEdades/cont;
         
         cadena = String.format("%sPromedio de edades: %.2f\n", 
                 cadena, promedioEdades);
